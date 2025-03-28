@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flow and Follow - Documentation</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      code {
+        background: #f4f4f4;
+        padding: 2px 5px;
+        border-radius: 3px;
+      }
+      .setup-steps {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flow and Follow - Period Tracking Application</h1>
+
+    <h2>About</h2>
+    <p>
+      Flow and Follow is a user-friendly period tracking application that helps
+      users monitor their menstrual cycle. Features include cycle prediction,
+      symptom tracking, and personal health insights.
+    </p>
+
+    <h2>Setup Instructions</h2>
+    <div class="setup-steps">
+      <h3>Prerequisites</h3>
+      <ul>
+        <li>Python 3.x installed on your computer</li>
+        <li>Command line/terminal access</li>
+      </ul>
+
+      <h3>Installation Steps</h3>
+      <ol>
+        <li>
+          Navigate to the project directory:
+          <code>cd projects/actual_project/webapp</code>
+        </li>
+        <li>
+          Create a virtual environment:
+          <code>python -m venv venv</code>
+        </li>
+        <li>
+          Activate the virtual environment:
+          <br />
+          Windows: <code>.\venv\Scripts\activate</code>
+          <br />
+          Mac/Linux: <code>source venv/bin/activate</code>
+        </li>
+        <li>
+          Install required packages:
+          <code
+            >pip install flask flask-wtf flask-sqlalchemy flask-bcrypt
+            flask-login flask-migrate pillow email_validator</code
+          >
+        </li>
+        <li>
+          Run the application:
+          <code>python run.py</code>
+        </li>
+        <li>
+          Open your web browser and visit:
+          <code>http://127.0.0.1:5000</code>
+        </li>
+      </ol>
+
+      <h3>Features</h3>
+      <ul>
+        <li>User Registration and Login</li>
+        <li>Period Cycle Tracking</li>
+        <li>Symptom Recording</li>
+        <li>Personal Health Insights</li>
+        <li>Cycle Predictions</li>
+      </ul>
+    </div>
+
+    <h2>Technical Stack</h2>
+    <ul>
+      <li>Backend: Flask (Python)</li>
+      <li>Database: SQLite</li>
+      <li>Authentication: Flask-Login</li>
+      <li>Forms: Flask-WTF</li>
+      <li>Password Hashing: Flask-Bcrypt</li>
+    </ul>
+  </body>
+</html>
